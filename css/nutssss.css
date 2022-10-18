@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(../https://cdn.jsdelivr.net/gh/lofiey/pic@0.1.0/chcstheme/img/bg.jpg);
+    background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(../http://rjxqmz0dp.bkt.clouddn.com/bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -39,7 +39,7 @@ body {
 .headPhoto {
     width: 8rem;
     height: 8rem;
-    background: url(https://cdn.jsdelivr.net/gh/lofiey/pic@0.1.1/chcstheme/img/xx.jpg) no-repeat;
+    background: url(http://rjxqmz0dp.bkt.clouddn.com/xx.jpg) no-repeat;
     background-size: cover;
     border-radius: 50%;
     position: relative;
