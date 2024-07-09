@@ -1,129 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-
-    <title>Chcst</title>
-    <meta name="description"
-        content="山野村夫的日常喃语.">
-    <meta name="keywords" content="nutssss,Chcst,Blog,博客,Note,Log">
-    <link rel="stylesheet" type="text/css" href="https://objectstorage.ap-seoul-1.oraclecloud.com/n/cnfputmch255/b/filex/o/FiraCode.css">
-    <link rel="stylesheet" type="text/css" href="https://objectstorage.ap-seoul-1.oraclecloud.com/n/cnfputmch255/b/filex/o/nutssss.css">
-    <link rel="icon" href="https://objectstorage.ap-seoul-1.oraclecloud.com/n/cnfputmch255/b/filex/o/favicon.ico">
-	<style>
-	img{
-	width:180px ;
-	height: 180px;
-	}
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&W Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4a4a4a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 90%;
+        }
+        .intro {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 50%;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <div id="box">
-        <!-- 个人资料卡片 -->
-        <div class="meBox">
-            <!-- 头像 -->
-            <div class="headPhoto"></div>
-            <!-- 介绍 -->
-            <div class="meBox-title">
-                <p>Chcst Lee</p>
-                <div class="fg"></div>
-            </div>
-            <div class="meBox-text">
-		<p style="text-align: center;">
-	
-			<img src="https://objectstorage.ap-seoul-1.oraclecloud.com/n/cnfputmch255/b/filex/o/dl.jpg" alt="">
-			</p>
-            </div>
-            <!-- 两个按钮 -->
-            <div class="meBox-Button">
-                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4MDc0NjgxOQ==&scene=110#wechat_redirect">About</a>
-                <a href="https://forms.office.com/r/Puy7jAHMuN">Contact</a>
-            </div>
-        </div>
-
-        <!-- 伪终端介绍 -->
-        <div id="cmdBox">
-            <!-- 第一个终端 -->
-            <div class="cmd">
-                <!-- 三个按钮 -->
-                <div class="click">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <!-- 顶部标题 -->
-                <div class="title">
-                    <span>Chcst - bash</span>
-                </div>
-                <!-- 终端内文字 -->
-                <div class="cmdText">
-                    <span style="color: rgb(0, 190, 0);">root@grouns</span>
-                    <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">./weather.sh</span>
-                    <br />
-                    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tc&skin=pitaya" frameborder="0"
-                        width="350" height="24" allowtransparency="true"></iframe>
-                    <br />
-                    <span style="color: rgb(0, 190, 0);">root@grouns</span>
-                    <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">cat /me.txt</span>
-                    <p>爱好计算机，会去自学有兴趣的一切东西</p>
-                    <p>学过Golang，C++开发，爱好折腾</p>
-                    <p>同时也很喜欢些数码产品</p>
-                    <p>其实最擅长的文学上的，对文字驾轻就熟</p>
-                    <p>然然，文学并不感兴趣，只因太擅长了</p>
-                    <p>总喜欢挑战未知领域，活到老学到老</p>
-                    <p>没有什么问题是尝试不能解决的，如果有那就多尝试几次甚至上百次</p>
-                    <p>即使前方的路看似绝境，也要有硬生生给自己开出一条路的勇气</p>
-                    <span style="color: rgb(0, 190, 0);">root@grouns</span>
-                    <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">sudo rm -rf /过去的自己/*</span>
-                </div>
-            </div>
-            <!-- 第二个终端 -->
-            <div class="cmd cmd2">
-                <!-- 三个按钮 -->
-                <div class="click">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <!-- 顶部标题 -->
-                <div class="title">
-                    <span>Chcst - bash</span>
-                </div>
-                <!-- 终端内文字 -->
-                <div class="cmdText">
-                    <span style="color: rgb(0, 190, 0);">root@grouns</span>
-                    <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">./links.sh</span>
-                    <p>我的其他站点：</p>
-                    <ul class="ul">
-                        <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4MDc0NjgxOQ==&scene=1&album_id=2293453338010664969&count=3#wechat_redirect">七嘴八舌看天下↩</a></li>
-                        <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4MDc0NjgxOQ==&scene=1&album_id=2293504723704037385&count=3#wechat_redirect">五彩壁纸炫炸天↩</a></li>
-                        <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4MDc0NjgxOQ==&scene=1&album_id=2293507991385620481&count=3#wechat_redirect">三更半夜现聊斋↩</a></li>
-                        <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4MDc0NjgxOQ==&scene=1&album_id=2293521529491636229&count=3#wechat_redirect">一羹清汤半生回↩</a></li>
-                        <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4MDc0NjgxOQ==&scene=1&album_id=2293447344283140098&count=3#wechat_redirect">只影片画沧桑尽↩</a></li>
-                        <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4MDc0NjgxOQ==&scene=1&album_id=2293461761615937541#wechat_redirect">孤音深处妙谛听↩</a></li>
-                  
-			</ul>
-					<!DOCTYPE html>
-
-                    <span style="color: rgb(0, 190, 0);">root@grouns</span>
-                    <span style="color: blue;">~</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 页脚 -->
-    <div id="footer">
-        <p>© Chcst | <a href="https://www.mqko.com/">Counselor </a></p>
+    <div class="container">
+        <div class="intro">Welcome to Little Dust Place!</div>
+        <div class="title">Helping Make the World a Better Place.</div>
+        <div class="description">Chcst is with you.</div>
     </div>
 </body>
-
 </html>
