@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B&W Landing Page</title>
+    <title>Domain for Sale</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #4a4a4a;
+            background-color: #1a1a1a;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -18,33 +18,82 @@
             text-align: center;
         }
         .container {
+            display: flex;
+            flex-direction: column;
             max-width: 90%;
         }
-        .intro {
-            font-size: 1.2em;
-            font-style: italic;
+        .section {
+            padding: 20px;
+            border: 1px solid #333;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: #2b2b2b;
         }
         .title {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 20px 0;
+            font-size: 2em;
+            color: #00ff00;
         }
-        .description {
-            font-size: 1em;
+        .button {
+            background-color: #00ff00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
             margin-top: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-size: 1em;
         }
         @media (min-width: 768px) {
             .container {
+                flex-direction: row;
+            }
+            .section {
                 max-width: 50%;
+                margin: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="intro">Welcome to Little Dust Place!</div>
-        <div class="title">Helping Make the World a Better Place.</div>
-        <div class="description">Chcst is with you.</div>
+        <div class="section">
+            <div class="title">GamesMint.com available for sale</div>
+            <p>19 years old premium domain name available for instant purchase. Invest in a premium domain name to launch your brand.</p>
+            <button class="button">Buy Now for $2259</button>
+        </div>
+        <div class="section">
+            <div class="title">Interested in this domain?</div>
+            <form action="send_email.php" method="post">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="What's your name?" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="What's your email?" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="What's your phone number?" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="offer" placeholder="Offer price in USD?" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="comments" placeholder="Any additional comments? (optional)"></textarea>
+                </div>
+                <button type="submit" class="button">Make An Offer</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
