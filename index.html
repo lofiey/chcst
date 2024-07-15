@@ -3,97 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word for Chcst</title>
+    <title>Story</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
+            background-color: #181818;
             color: #fff;
+        }
+        .banner {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: space-between;
             height: 100vh;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            max-width: 90%;
-        }
-        .section {
             padding: 20px;
-            border: 1px solid #333;
-            margin: 10px;
-            border-radius: 8px;
-            background-color: #2b2b2b;
         }
-        .title {
-            font-size: 2em;
-            color: #00ff00;
+        .banner-content {
+            max-width: 50%;
         }
-        .button {
-            background-color: #00ff00;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
+        .banner-content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .banner-content p {
             font-size: 1.2em;
-            cursor: pointer;
-            margin-top: 10px;
+            margin: 20px 0;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #333;
-            border-radius: 4px;
-            background-color: #1a1a1a;
+        .banner-content a {
+            display: inline-block;
+            padding: 10px 20px;
             color: #fff;
-            font-size: 1em;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
         }
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
-            .section {
-                max-width: 50%;
-                margin: 20px;
-            }
+        .banner-image {
+            max-width: 50%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="section">
-            <div class="title">Welcome to Little Dust Place</div>
-            <p>Helping Make the World a Better Place.</p>
-            <button class="button">Get!</button>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Chcst</h1>
+            <p>A persistent thought will always have its echo.</p>
+            <p>Reflecting on the vastness of the world, one is reminded of their own insignificance.</p>
+            <a href="#">Explore</a>
         </div>
-        <div class="section">
-            <div class="title">Chcst is with you.</div>
-            <form action="https://sid.dha.tha.9l3.com/send_email.php" method="post">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="What's your name?" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="What's your email?" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" placeholder="What's your phone number?" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="offer" placeholder="Offer price in USD?" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="comments" placeholder="Any additional comments? (optional)"></textarea>
-                </div>
-                <button type="submit" class="button">Make An Offer</button>
-            </form>
-        </div>
+        <div class="banner-image" style="background-image: url('https://cdn.jsdelivr.net/gh/lofiey/pic@0.1.9/chcstheme/img/IMG_0322.jpeg');"></div>
     </div>
 </body>
 </html>
